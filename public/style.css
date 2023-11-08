@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
   padding-bottom: 3rem;
@@ -5,7 +6,7 @@ body {
 }
 
 #form {
-  background: rgba(0, 0, 0, 0.15);
+  background: #29383e;
   padding: 0.25rem;
   position: fixed;
   bottom: 0;
@@ -15,6 +16,7 @@ body {
   height: 3rem;
   box-sizing: border-box;
   backdrop-filter: blur(10px);
+  
 }
 
 #input {
@@ -23,14 +25,18 @@ body {
   flex-grow: 1;
   border-radius: 2rem;
   margin: 0.25rem;
+  background-color: #4c585c;
+  color: white;
 }
-
+#input:hover{
+  background-color: #444; 
+}
 #input:focus {
   outline: none;
 }
 
 #form>button {
-  background: #333;
+  background: #00b2a0;
   border: none;
   padding: 0 1rem;
   margin: 0.25rem;
@@ -38,7 +44,9 @@ body {
   outline: none;
   color: #fff;
 }
-
+#form>button:hover {
+  background-color: #00cf6d; 
+  transform: scale(1.2);}
 #messages {
   list-style-type: none;
   margin: 0;
@@ -47,8 +55,20 @@ body {
 
 #messages>li {
   padding: 0.5rem 1rem;
+border-radius: 15px;
+color: white;
+margin: 10px;
+  
 }
-
+#name{
+  background: #29383e;
+color: white;
+}
+#name:hover {
+  background-color: #3a5a64; 
+}
+  
 #messages>li:nth-child(odd) {
-  background: #efefef;
+  background: #1d2e36;
+  color: white;
 }
